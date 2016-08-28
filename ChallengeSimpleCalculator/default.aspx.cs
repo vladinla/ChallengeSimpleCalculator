@@ -21,43 +21,37 @@ namespace ChallengeSimpleCalculator
 
         protected void plusButton_Click(object sender, EventArgs e)
         {
-            int value1Plus = int.Parse(firstTextBox.Text);
-            int value2Plus = int.Parse(secondTextBox.Text);
+            double value1 = double.Parse(firstTextBox.Text);
+            double value2 = double.Parse(secondTextBox.Text);
 
-            int resultPlus = value1Plus + value2Plus;
+            resultLabel.Text = (value1 + value2).ToString();
 
-            resultLabel.Text = resultPlus.ToString();
            
         }
 
         protected void minusButton_Click(object sender, EventArgs e)
         {
-            int value1Minus = int.Parse(firstTextBox.Text);
-            int value2Minus = int.Parse(secondTextBox.Text);
+            double value1 = double.Parse(firstTextBox.Text);
+            double value2 = double.Parse(secondTextBox.Text);
 
-            int resultMinus = value1Minus - value2Minus;
-
-            resultLabel.Text = resultMinus.ToString();
+            resultLabel.Text = (value1 - value2).ToString();
         }
-
+    
         protected void multButton_Click(object sender, EventArgs e)
         {
-            int value1Mult = int.Parse(firstTextBox.Text);
-            int value2Mult = int.Parse(secondTextBox.Text);
+            double value1 = double.Parse(firstTextBox.Text);
+            double value2 = double.Parse(secondTextBox.Text);
 
-            int resultMult = value1Mult * value2Mult;
+            resultLabel.Text = (value1 * value2).ToString();
 
-            resultLabel.Text = resultMult.ToString();
         }
 
         protected void divisionButton_Click(object sender, EventArgs e)
         {
-            double value1Div = int.Parse(firstTextBox.Text);
-            double value2Div = int.Parse(secondTextBox.Text);
+            double value1 = double.Parse(firstTextBox.Text);
+            double value2 = double.Parse(secondTextBox.Text);
 
-            double resultDivide = value1Div / value2Div;
-
-            resultLabel.Text = resultDivide.ToString();
+            resultLabel.Text = Math.Round((value1 / value2),3).ToString();
         }
     }
 }
