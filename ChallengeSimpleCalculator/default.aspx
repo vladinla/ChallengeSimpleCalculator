@@ -29,6 +29,7 @@
         <asp:Button ID="multButton" runat="server" Text="*" OnClick="multButton_Click" />
 &nbsp;
         <asp:Button ID="divisionButton" runat="server" Text="/" OnClick="divisionButton_Click" />
+        &nbsp;<asp:Button ID="clearButton" runat="server" OnClick="clearButton_Click" Text="C" />
         <br />
         <br />
         Result:&nbsp;

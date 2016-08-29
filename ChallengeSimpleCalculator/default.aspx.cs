@@ -53,5 +53,12 @@ namespace ChallengeSimpleCalculator
 
             resultLabel.Text = Math.Round((value1 / value2),3).ToString();
         }
+
+        protected void clearButton_Click(object sender, EventArgs e)
+        {
+            firstTextBox.Text = string.Empty;
+            secondTextBox.Text = string.Empty;
+            resultLabel.Text = string.Empty;
+        }
     }
 }
